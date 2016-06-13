@@ -4,9 +4,11 @@
 #b56969 - light red (Headers)
 #22264b - purple (accent)
 */
+
+
 html {
   overflow-y: scroll;
-  background: #e8edf3;
+  background: whitesmoke;
   font-weight:bolder;
 }
 
@@ -15,23 +17,22 @@ h1,h2,h3,h4,h5,h6 {
   -webkit-font-smoothing: antialiased;
 }
 a {
-  color: #22264b;
+  color: #D3CBB8;
 
 }
 a:visted {
-  color: #22264b;
+  color: #324F42;
 }
 h1 {
-  text-shadow: 3px 2px #e6cf8b;
-  color: #b56969;
+  color: #9D3831;
   font-size: 2.5em;
 }
 h2 {
-  color: #22264b;
+  color: #083663;
   font-size: 1.8em;
 }
-h3 {
-  color: #b56969;
+h3 {  
+  color: #9D3831;
   font-size: 1.3em;
 }
 
@@ -48,7 +49,7 @@ left: 0;
 z-index: 9001;
 width: 100%;
 height: 4em;
-background: whitesmoke;
+background: #324f42;
 }
 
 .navbar li{
@@ -65,7 +66,7 @@ background: whitesmoke;
 .navbar li a:after{
   display:block;
   content:'';
-  border-bottom: 1px solid #b56969;
+  border-bottom: 1px solid #9D3831;
   transform: scaleX(0.0001);
   transition: transform 250ms ease-in-out;
  
@@ -76,6 +77,7 @@ background: whitesmoke;
 .navbar img{
   height: 3em;
   width: 3em;
+  border-radius: 100%;
 }
 section.top{
   margin-top: 8.175em;
@@ -100,4 +102,11 @@ section.top{
 
 section p::first-letter {
  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 460px){
+img.hidden {
+  display: hidden;
+}
+  }
 }
